@@ -1,6 +1,16 @@
 @use './abstracts/variables';
 @use './base/typography';
 
-//@use './components/';
+@use './components/nav';
 
 @use './pages/home';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Spartan', sans-serif;
+}
