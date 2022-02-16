@@ -3,29 +3,28 @@
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-  position: fixed;
+  width: 100vw;
+  position: absolute;
   z-index: 9999;
-}
-.nav .nav__logo {
-  display: none;
 }
 .nav .nav__hamburger {
   display: none;
   margin-top: -2rem;
   margin-left: 2rem;
   cursor: pointer;
-  filter: grayscale(100%) brightness(0%);
-  -webkit-filter: grayscale(100%) brightness(0%);
-  -moz-filter: grayscale(100%) brightness(0%);
+}
+.nav .nav__logo {
+  display: none;
 }
 .nav .nav__hamburger-open {
-  display: block;
+  display: inline-block;
 }
 .nav .nav__hamburger-close {
   display: none;
 }
 .nav .nav__list {
   display: flex;
+  flex-direction: row;
   margin-top: -2rem;
   margin-right: 2rem;
 }
@@ -55,7 +54,36 @@
   width: 100vw;
   height: auto;
 }
+.container .main .main__image-container {
+  position: relative;
+}
+.container .main .main__image-container .main__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  background-color: black;
+  width: 6rem;
+  height: 3rem;
+  bottom: 0.3rem;
+  right: 0;
+}
+.container .main .main__image-container .main__nav .main__nav-arrow-left {
+  cursor: pointer;
+}
+.container .main .main__image-container .main__nav .main__nav-arrow-left img {
+  width: 80%;
+  height: auto;
+}
+.container .main .main__image-container .main__nav .main__nav-arrow-right {
+  cursor: pointer;
+}
+.container .main .main__image-container .main__nav .main__nav-arrow-right img {
+  width: 80%;
+  height: auto;
+}
 .container .article {
+  margin-top: 2rem;
   margin-left: 2rem;
   width: 80vw;
 }
@@ -64,9 +92,43 @@
 }
 .container .article p {
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   margin-top: 1rem;
   line-height: 1.4rem;
+}
+.container .article .article__buy-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.container .article .article__buy-container span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.6rem;
+}
+.container .article .article__buy-container img {
+  width: 3rem;
+  height: auto;
+}
+.container .section {
+  margin-top: 3rem;
+  width: 80vw;
+}
+.container .section .section__content {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.container .section .section__content h2 {
+  font-weight: 700;
+}
+.container .section .section__content p {
+  font-weight: 500;
+  font-size: 0.65rem;
+  margin-top: 1rem;
+  line-height: 1.4rem;
+}
+.container .footer {
+  margin-top: 2rem;
 }
 
 .img {
@@ -74,6 +136,40 @@
   height: auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .nav {
+    width: 50vw;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nav .nav__hamburger-open {
+    display: none;
+  }
+  .nav .nav__logo {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  .nav .nav__list {
+    margin: 0;
+    margin-left: 4rem;
+  }
+  .nav .nav__list .nav__item .nav__link {
+    color: white;
+  }
+  .nav .nav__list-closed {
+    display: flex;
+  }
+
+  .container .main .main__image-container .main__image {
+    width: 60vw;
+    height: auto;
+  }
+
+  .img {
+    width: 30vw;
+    height: auto;
+  }
+}
 * {
   margin: 0;
   padding: 0;
