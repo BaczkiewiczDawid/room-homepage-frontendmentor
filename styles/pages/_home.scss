@@ -152,10 +152,10 @@
                 line-height: 1.4rem;
             }
         }
-    }
 
-    .footer {
-        margin-top: 2rem;
+        .footer {
+            margin-top: 2rem;
+        }
     }
 }
 
@@ -197,12 +197,64 @@
 
     .container {
         .main {
+            display: flex;
+            flex-direction: row;
+
             .main__image-container {
                .main__image {
                     width: 60vw;
                     height: auto;
                 }
+
+                .main__nav {
+                    position: inline;
+                }
             }
+
+            .article {
+                width: 30vw;
+
+                h1 {
+                    margin-top: 3rem;
+                    font-size: 1.4rem;
+                }
+
+                p {
+                    font-size: .55rem;
+                }
+
+                .article__buy-container {
+                    span {
+                        font-size: .65rem;
+                        letter-spacing: .5rem;
+                        font-weight: 600;
+                    }
+
+                    img {
+                        margin-left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .section {
+        display: flex;
+        margin: 0;
+
+        .section__content {
+            h2 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: .55rem;
+                width: 30vw;
+            }
+        }
+
+        .footer {
+            margin-top: 10rem;
         }
     }
 
