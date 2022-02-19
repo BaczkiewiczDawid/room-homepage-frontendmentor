@@ -263,3 +263,44 @@
         height: auto;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .container {
+        .main {
+            .article {
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: .7rem;
+                    line-height: 1.6rem;
+                    letter-spacing: .1rem;
+                    margin-top: 2rem;
+                }
+
+                .article__buy-container {
+                    span {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+        .section {
+            .section__content {
+                h2 {
+                    font-size: 1.7rem;
+                }
+
+                p {
+                    font-size: .7rem;
+                }
+            }
+        }
+
+        .footer {
+            margin-left: 3rem;
+        }
+    }
+}
